@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IDATA</title>
+    <link rel="stylesheet" href="style.css">
+
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <!-- boxicons.com -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <!-- font-awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-inner">
+            <div class="header-nav">
+                <a href="#" class="header-logo">IDATA</a>
+                <div class="show-desktop">
+                    <div class="header-list">
+                        <ul>
+                            <li><a href="#services"><i class='bx bx-chevron-down'></i><span>Services</span></a></li>
+                            <li><a href="#industries"><i class='bx bx-chevron-down'></i><span>Industries</span></a></li>
+                            <li><a href="./pages/use-case.html"><i class='bx bx-chevron-down'></i><span>Use Cases</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="header-contact">
+                        <div class="contact-link">
+                            <a href="#section-contacts">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+                <div class=mobile-menu> 
+                    <button class="nav__toggle-btn" id="nav__toggle-open"><i class="fa-solid fa-bars"></i></button>
+                    <button class="nav__toggle-btn" id="nav__toggle-close"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+                <div class="mobile-nav" >
+                    <div class="mobile-nav__header">
+                        <a href="#" class="header-logo">IDATA</a>
+                    </div>
+                    <ul class="mobile-nav-list">
+                        <li class="mobile-nav-list__list-item">
+                            <a href="#services" class="mobile-nav-list__item">Services</a>
+                        </li>
+                        <li class="mobile-nav-list__list-item">
+                            <a href="#industries" class="mobile-nav-list__item">Industries</a>
+                        </li>
+                        <li class="mobile-nav-list__list-item">
+                            <a href="./pages/use-case.html" class="mobile-nav-list__item">Use Case</a>
+                        </li>
+                        <li class="contact-link">
+                            <a href="#section-contacts">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <section class="front-page-heading">
+        <div class="front-page-heading-inner">
+            <div class="front-page-heading-content">
+                <h1 class="front-page-heading-title">Big on Data Science & AI</h1>
+                <h2 class="front-page-heading-subtitle">Empowering Your Business With Data Science and AI Technology
+                </h2>
+            </div>
+            <div class="front-page-heading-bottom">
+                <ul class="front-page-heading-list show-desktop">
+                    <li class="front-page-heading-list-item">
+                        <div class="front-page-heading-list-text">Enhance data analytics</div>
+                        <div class="front-page-heading-list__link link__underline gradient-1">
+                            <div class="front-page-heading-list-title"> <span class="link-title">Big Data Analytics</span></div>
+                            <div class="front-page-heading-list-descr">Implement efficient analytics to accelerate your time to insights and respond to changing business environment.</div>
+                        </div>
+                    </li>
+                    <li class="front-page-heading-list-item">
+                        <div class="front-page-heading-list-text">Predict churn and prevent cost overruns</div>
+                        <div class="front-page-heading-list__link link__underline gradient-2">
+                            <div class="front-page-heading-list-title"> <span class="link-title">Predictive Analytics</span></div>
+                            <div class="front-page-heading-list-descr">Validate business concepts and provide competitive services by analyzing and anticipating customer behavior.</div>
+                        </div>
+                    </li>
+                    <li class="front-page-heading-list-item">
+                        <div class="front-page-heading-list-text">Better understand your brand perception</div>
+                        <div class="front-page-heading-list__link link__underline gradient-3">
+                            <div class="front-page-heading-list-title"> <span class="link-title">Natural Language Processing (NLP)</span></div>
+                            <div class="front-page-heading-list-descr">Unlock rich audience insights that will help you react to any business changes as quickly as possible.</div>
+                        </div>
+                    </li>
+                    <li class="front-page-heading-list-item">
+                        <div class="front-page-heading-list-text">Eliminate errors and enhance accuracy</div>
+                        <div class="front-page-heading-list__link link__underline gradient-4">
+                            <div class="front-page-heading-list-title"> <span class="link-title">Data Capture & OCR</span></div>
+                            <div class="front-page-heading-list-descr">Automate data tasks and ensure flawless data management processes.</div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="front-page-heading-list-text show-mobile">Enhance data analytics</div>
+                            <div class="front-page-heading-list__link link__underline gradient-1">
+                                <div class="front-page-heading-list-title"> <span class="link-title">Big Data Analytics</span></div>
+                                <div class="front-page-heading-list-descr">Implement efficient analytics to accelerate your time to
+                                    insights and respond to changing business environment.</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="front-page-heading-list-text show-mobile">Predict churn and prevent cost overruns</div>
+                            <div class="front-page-heading-list__link link__underline gradient-1">
+                                <div class="front-page-heading-list-title"> <span class="link-title">Predictive Analytics</span></div>
+                                <div class="front-page-heading-list-descr">Validate business concepts and provide competitive services by analyzing and anticipating customer behavior.</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="front-page-heading-list-text show-mobile">Better understand your brand perception</div>
+                            <div class="front-page-heading-list__link link__underline gradient-1">
+                                <div class="front-page-heading-list-title"> <span class="link-title">Natural Language Processing (NLP)</span></div>
+                                <div class="front-page-heading-list-descr">Unlock rich audience insights that will help you react to any business changes as quickly as possible.</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="front-page-heading-list-text show-mobile">Eliminate errors and enhance accuracy</div>
+                            <div class="front-page-heading-list__link link__underline gradient-1">
+                                <div class="front-page-heading-list-title"> <span class="link-title">Data Capture & OCR</span></div>
+                                <div class="front-page-heading-list-descr">Automate data tasks and ensure flawless data management processes.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="list-of-work">
+        <div class="list-of-work-inner">
+            <h3 class="head-block-center">How We Can Help You</h3>
+            <div class="text-block-center">Meke data science your competitive advantage.</div>
+            <ul class="list-of-work-list">
+                <li class="list-of-work-list-list main-ds-solution">
+                    <div class="list-of-work-list-list-item">
+                        <div class="list-of-work-list-list-item-title">PoC of an AI-Based Solution</div>
+                        <div class="list-of-work-list-list-item-desc">POC is an essential step before adopting any AI solution. If you have a project idea in mind, our data science consultants will verify that your concept has practical potential without any loss of time.</div>
+                    </div>
+                </li>
+                <li class="list-of-work-list-list main-ds-product">
+                    <div class="list-of-work-list-list-item">
+                        <div class="list-of-work-list-list-item-title">MVP of an AI-Based Product</div>
+                        <div class="list-of-work-list-list-item-desc">If you need a breakthrough AI product, we are ready to create an initial version with just the right number of features to satisfy early customers and provide feedback for future product development.</div>
+                    </div>
+                </li>
+                <li class="list-of-work-list-list main-ai-sw-dev">
+                    <div class="list-of-work-list-list-item">
+                        <div class="list-of-work-list-list-item-title">AI-Driven Mobile/Web App Development</div>
+                        <div class="list-of-work-list-list-item-desc">We are here to build your in novative web or mobile app from scratch and power it with AI capabilities that your users will love.</div>
+                    </div>
+                </li>
+                <li class="list-of-work-list-list main-ai-app">
+                    <div class="list-of-work-list-list-item">
+                        <div class="list-of-work-list-list-item-title">AI & ML Empowering of Your Mobile/Web App</div>
+                        <div class="list-of-work-list-list-item-desc">The web & mobile app market is constantly changing. If you already have a mobile or a web app, we are ready to empower it with AI capabilities to take it to a whole new level.</div>
+                    </div>
+                </li>
+                <li class="list-of-work-list-list main-ml-consult">
+                    <div class="list-of-work-list-list-item">
+                        <div class="list-of-work-list-list-item-title">ML Consulting</div>
+                        <div class="list-of-work-list-list-item-desc">Have a project idea and need some help implementing it? Our data here consult you and share their knowledge to help you avoid any unnecessary pitfalls.</div>
+                    </div>
+                </li>
+            </ul>
+            <div class="text-block-center">We welcome opportunities to work alongside different teams on projects of any
+                complexity. Working together, we will develop new systems, solutions, and products to put you ahead of
+                your competition.</div>
+            <div class="list-of-work-action action">
+                <a href="#section-contacts" class="list-of-work-action-a action-a">I Need Free Consultation</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="services-inner">
+            <h3 class="head-block-center">Services</h3>
+            <ul class="services-list">
+                <li id="menu-item-11961" class="service-list__list-item">
+                    <div class="service-list__item link__underline"><span>Big Data Development Services</span></div>
+                    <ul class="sub-menu-list">
+                        <li id="menu-item-19809" class="sub-menu-list__list-item">
+                            <div class="sub-menu-list__item"><span>Modern Data Architecture</span></div>
+                        </li>
+                        <li id="menu-item-19002" class="sub-menu-list__list-item">
+                            <div class="sub-menu-list__item"><span>Data Engineering Services</span></div>
+                        </li>
+                        <li id="menu-item-16973" class="sub-menu-list__list-item">
+                            <div class="sub-menu-list__item"><span>Big Data Analytics</span></div>
+                        </li>
+                        <li id="menu-item-17382" class="sub-menu-list__list-item">
+                            <div class="sub-menu-list__item"><span>BI &#038; Data Warehouse</span></div>
+                        </li>
+                    </ul>
+                </li>
+                <li id="menu-item-9519" class="service-list__list-item">
+                    <div class="service-list__item link__underline"><span>AI Solutions</span></div>
+                    <ul class="sub-menu-list">
+                        <li id="menu-item-7733" class="sub-menu-list__list-item">
+                            <div class="sub-menu-list__item"><span>AI Software Development</span></div>
+                        </li>
+                        <li id="menu-item-7178" class="sub-menu-list__list-item">
+                            <div class="sub-menu-list__item"><span>Machine Learning Consulting</span></div>
+                        </li>
+                    </ul>
+                </li>
+                <li id="menu-item-4936" class="service-list__list-item">
+                    <div class="service-list__item link__underline"><span>Computer Vision</span></div>
+                    <ul class="sub-menu-list">
+                        <li id="menu-item-7840" class="sub-menu-list__list-item">
+                            <div class="sub-menu-list__item"><span>Image Recognition Solutions</span></div>
+                        </li>
+                        <li id="menu-item-11790" class="sub-menu-list__list-item">
+                            <div class="sub-menu-list__item"><span>Pose Estimation</span></div>
+                        </li>
+                        <li id="menu-item-5760" class="sub-menu-list__list-item">
+                            <div class="sub-menu-list__item"><span>Computer Vision Models Gallery</span></div>
+                        </li>
+                        <li id="menu-item-8355" class="sub-menu-list__list-item">
+                            <div class="sub-menu-list__item"><span>Visual Search</span></div>
+                        </li>
+                    </ul>
+                </li>
+                <li id="menu-item-4937" class="service-list__list-item">
+                    <div class="service-list__item link__underline"><span>Predictive Analytics</span></div>
+                    <ul class="sub-menu-list">
+                        <li id="menu-item-11454" class="sub-menu-list__list-item">
+                            <div class="sub-menu-list__item"><span>Recommendation Systems</span></div>
+                        </li>
+                    </ul>
+                </li>
+                <li id="menu-item-11397" class="service-list__list-item">
+                    <div class="service-list__item link__underline"><span>AI-Driven Mobile App Development</span></div>
+                </li>
+                <li id="menu-item-13718" class="service-list__list-item">
+                    <div class="service-list__item link__underline"><span>NLP Services</span></div>
+                    <ul class="sub-menu-list">
+                        <li id="menu-item-18832" class="sub-menu-list__list-item">
+                            <div class="sub-menu-list__item"><span>Customer Experience Consulting</span></div>
+                        </li>
+                        <li id="menu-item-20187" class="sub-menu-list__list-item">
+                            <div class="sub-menu-list__item"><span>AI Call Center Solutions</span></div>
+                        </li>
+                        <li id="menu-item-7908" class="sub-menu-list__list-item">
+                            <div class="sub-menu-list__item"><span>Consumer Sentiment Analysis</span></div>
+                        </li>
+                        <li id="menu-item-4938" class="sub-menu-list__list-item">
+                            <div class="sub-menu-list__item"><span>Text Analysis</span></div>
+                        </li>
+                    </ul>
+                </li>
+                <li id="menu-item-7664" class="service-list__list-item">
+                    <div class="service-list__item link__underline"><span>Data Capture &#038; OCR</span></div>
+                    <ul class="sub-menu-list">
+                        <li id="menu-item-8070" class="sub-menu-list__list-item">
+                            <div class="sub-menu-list__item"><span>Automated Invoice Processing</span></div>
+                        </li>
+                        <li id="menu-item-7619" class="sub-menu-list__list-item">
+                            <div class="sub-menu-list__item"><span>Intelligent Document Processing</span></div>
+                        </li>
+                    </ul>
+                </li>
+                <li id="menu-item-14739" class="service-list__list-item">
+                    <div class="service-list__item link__underline"><span>Custom Web Development Services</span></div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="accordion">
+        <div class="accordion-inner">
+            <div class="text-block-center">
+                Being a leading data science company, we help our clients extract valuable business insights from their
+                data to better understand their audience, forecast demand, reduce risks, prevent cost overruns, and much
+                more.
+                <br>
+                We use different tools and AI services, including AWS:
+            </div>
+            <div class="accordion-wrapper">
+                <ul class="accordion-titles-list">
+                    <li class="accordion-titles-list-list">
+                        <h3 class="accordion-titles-list-list-item-title active">Improve Customer Experience</h3>
+                        <div class="section-accordion-titles-list__mobile-text">
+                            <p><span class="orange-strong"><strong>AWS Personalize</strong> | Recommendation,
+                                    Personalization<br> <strong>AWS Kendra</strong> | Enhance web &amp; apps with
+                                    NLP to help users find what they search for<br> <strong>AWS Connect</strong> |
+                                    Contact center to support millions of customers</span></p>
+                        </div>
+                    </li>
+                    <li class="accordion-titles-list-list">
+                        <h3 class="accordion-titles-list-list-item-title">Data Extraction & Analysis</h3>
+                        <div class="section-accordion-titles-list__mobile-text">
+                            <p><span class="orange-strong"><strong>AWS Comprehend</strong> | Sentiment analysis, Topic
+                                    modelling, Key-phrase extraction, Entity detection, Classification<br>
+                                    <strong>AWS Comprehend Medical</strong> | Extract information from unstructured
+                                    medical text<br> <strong>AWS Textract</strong> | Document extraction, Document
+                                    redaction, Table extraction</span></p>
+                        </div>
+                    </li>
+                    <li class="accordion-titles-list-list">
+                        <h3 class="accordion-titles-list-list-item-title">Computer Vision</h3>
+                        <div class="section-accordion-titles-list__mobile-text">
+                            <p><span class="orange-strong"><strong>AWS Rekognition</strong> | Object detection, Text
+                                    detection, Image moderation, Activity detection<br> <strong>AWS Lookout for
+                                        Vision</strong> | Detect defects, Automate inspection, Identify vehicle
+                                    &amp; structure damage<br> </span></p>
+                        </div>
+                    </li>
+                    <li class="accordion-titles-list-list">
+                        <h3 class="accordion-titles-list-list-item-title">Language AI</h3>
+                        <div class="section-accordion-titles-list__mobile-text">
+                            <p><span class="orange-strong"><strong>AWS Lex</strong> | Conversational chatbots, BI
+                                    chatbots<br> <strong>AWS Transcribe</strong> | Speech-to-text, Create
+                                    transcripts, Content redaction, Vocabulary filtering<br> <strong>AWS
+                                        Polly</strong> | Text-to-speech, Text dictation</span></p>
+                        </div>
+                    </li>
+                    <li class="accordion-titles-list-list">
+                        <h3 class="accordion-titles-list-list-item-title">Business metrics</h3>
+                        <div class="section-accordion-titles-list__mobile-text">
+                            <p><span class="orange-strong"><strong>AWS Forecast</strong> | Forecast business outcomes,
+                                    Retail forecasting, Demand forecasting<br> <strong>AWS Fraud Detector</strong> |
+                                    Identify suspicious online payments, Detect new account fraud, Prevent loyalty
+                                    program abuse<br> <strong>AWS Lookout for Metrics</strong> | Detect anomalies in
+                                    business metrics and identify their root cause, Understand churn &amp;
+                                    retention, Optimize your digital ad spend, Boost user engagement</span></p>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="accordion-text-list">
+                    <li class="accordion-text-list-list active">
+                        <div class="accordion-text-list-list-item">
+                            <p><span class="orange-strong"><strong>AWS Personalize</strong> | Recommendation,
+                                    Personalization<br> <strong>AWS Kendra</strong> | Enhance web &amp; apps with
+                                    NLP to help users find what they search for<br> <strong>AWS Connect</strong> |
+                                    Contact center to support millions of customers</span></p>
+                        </div>
+                    </li>
+                    <li class="accordion-text-list-list ">
+                        <div class="accordion-text-list-list-item">
+                            <p><span class="orange-strong"><strong>AWS Comprehend</strong> | Sentiment analysis, Topic
+                                    modelling, Key-phrase extraction, Entity detection, Classification<br>
+                                    <strong>AWS Comprehend Medical</strong> | Extract information from unstructured
+                                    medical text<br> <strong>AWS Textract</strong> | Document extraction, Document
+                                    redaction, Table extraction</span></p>
+                        </div>
+                    </li>
+                    <li class="accordion-text-list-list ">
+                        <div class="accordion-text-list-list-item">
+                            <p><span class="orange-strong"><strong>AWS Rekognition</strong> | Object detection, Text
+                                    detection, Image moderation, Activity detection<br> <strong>AWS Lookout for
+                                        Vision</strong> | Detect defects, Automate inspection, Identify vehicle
+                                    &amp; structure damage<br> </span></p>
+                        </div>
+                    </li>
+                    <li class="accordion-text-list-list ">
+                        <div class="accordion-text-list-list-item">
+                            <p><span class="orange-strong"><strong>AWS Lex</strong> | Conversational chatbots, BI
+                                    chatbots<br> <strong>AWS Transcribe</strong> | Speech-to-text, Create
+                                    transcripts, Content redaction, Vocabulary filtering<br> <strong>AWS
+                                        Polly</strong> | Text-to-speech, Text dictation</span></p>
+                        </div>
+                    </li>
+                    <li class="accordion-text-list-list ">
+                        <div class="accordion-text-list-list-item">
+                            <p><span class="orange-strong"><strong>AWS Forecast</strong> | Forecast business outcomes,
+                                    Retail forecasting, Demand forecasting<br> <strong>AWS Fraud Detector</strong> |
+                                    Identify suspicious online payments, Detect new account fraud, Prevent loyalty
+                                    program abuse<br> <strong>AWS Lookout for Metrics</strong> | Detect anomalies in
+                                    business metrics and identify their root cause, Understand churn &amp;
+                                    retention, Optimize your digital ad spend, Boost user engagement</span></p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="industries" id="industries">
+        <div class="industries-inner">
+            <h3 class="head-block-center">Industries</h3>
+            <ul class="industries-list">
+                <li id="menu-item-13225" class="industries-list__list-item">
+                    <div class="industries-list__item link__underline"><span>Healtcare & Pharma</span></div>
+                </li>
+                <li id="menu-item-15555" class="industries-list__list-item">
+                    <div class="industries-list__item link__underline"><span>MarTech</span></div>
+                </li>
+                <li id="menu-item-14833" class="industries-list__list-item">
+                    <div class="industries-list__item link__underline"><span>Game & Entartainment</span></div>
+                </li>
+                <li id="menu-item-13608" class="industries-list__list-item">
+                    <div class="industries-list__item link__underline"><span>Sport & Wellness</span></div>
+                </li>
+                <li id="menu-item-17071" class="industries-list__list-item">
+                    <div class="industries-list__item link__underline"><span>Automotive</span></div>
+                </li>
+                <li id="menu-item-14438" class="industries-list__list-item">
+                    <div class="industries-list__item link__underline"><span>Fintech</span></div>
+                </li>
+                <li id="menu-item-13980" class="industries-list__list-item">
+                    <div class="industries-list__item link__underline"><span>E-commerce</span></div>
+                </li>
+                <li id="menu-item-17213" class="industries-list__list-item">
+                    <div class="industries-list__item link__underline"><span>Logistics</span></div>
+                </li>
+                <li id="menu-item-14195" class="industries-list__list-item">
+                    <div class="industries-list__item link__underline"><span>Retail</span></div>
+                </li>
+                
+            </ul>
+        </div>
+    </section>
+
+    <section class="certificates" id="certificates">
+        <div class="certificates-inner">
+            <h2 class="head-block-center">Certificates</h2>
+            <div class="text-block-center">We’re a team of specialists who have certifications for qualifying the
+                skills, knowledge and expertise.</div>
+            <ul class="certificates-list">
+                <li class="certificates-list-list">
+                    <div class="certificates-list-list-item">
+                        <img src="./images/certificates/data-bricks-spark.png" alt="data-bricks-spark"
+                            style="height: 100px;;">
+                    </div>
+                </li>
+                <li class="certificates-list-list">
+                    <div class="certificates-list-list-item">
+                        <img src="./images/certificates/aws-solution-architect.jpg" alt="aws-solution-architect"
+                            style="height: 100px;;">
+                    </div>
+                </li>
+                <li class="certificates-list-list">
+                    <div class="certificates-list-list-item">
+                        <img src="./images/certificates/confluent-apache-kafka.jpg" alt="confluent-apache-kafka"
+                            style="height: 100px;;">
+                    </div>
+                </li>
+                <li class="certificates-list-list">
+                    <div class="certificates-list-list-item">
+                        <img src="./images/certificates/power-bi-data-analyst.jpg" alt="power-bi-data-analyst"
+                            style="height: 100px;;">
+                    </div>
+                </li>
+                <li class="certificates-list-list">
+                    <div class="certificates-list-list-item">
+                        <img src="./images/certificates/AWS-Big-Data.png" alt="AWS-Big-Data" style="height: 100px;;">
+                    </div>
+                </li>
+                <li class="certificates-list-list">
+                    <div class="certificates-list-list-item">
+                        <img src="./images/certificates/AWS-Database-Specialty.png" alt="AWS-Database-Specialty"
+                            style="height: 100px;;">
+                    </div>
+                </li>
+                <li class="certificates-list-list">
+                    <div class="certificates-list-list-item">
+                        <img src="./images/certificates/AWS-Developer-Associate.png" alt="AWS-Developer-Associate"
+                            style="height: 100px;;">
+                    </div>
+                </li>
+                <li class="certificates-list-list">
+                    <div class="certificates-list-list-item">
+                        <img src="./images/certificates/AWS-Solutions-Architect-Associate.png"
+                            alt="AWS-Solutions-Architect-Associate" style="height: 100px;;">
+                    </div>
+                </li>
+                <li class="certificates-list-list">
+                    <div class="certificates-list-list-item">
+                        <img src="./images/certificates/AWS-Machine-Learning.png" alt="AWS-Machine-Learning"
+                            style="height: 100px;;">
+                    </div>
+                </li>
+                <li class="certificates-list-list">
+                    <div class="certificates-list-list-item">
+                        <img src="./images/certificates/microsoft-certified-azure.png" alt="microsoft-certified-azure"
+                            style="height: 100px;;">
+                    </div>
+                </li>
+                <li class="certificates-list-list">
+                    <div class="certificates-list-list-item">
+                        <img src="./images/certificates/ibm-data-and-ai.png" alt="ibm-data-and-ai"
+                            style="height: 100px;;">
+                    </div>
+                </li>
+                <li class="certificates-list-list">
+                    <div class="certificates-list-list-item">
+                        <img src="./images/certificates/logo-aws-certified-cloud-practitioner.png"
+                            alt="logo-aws-certified-cloud-practitioner" style="height: 100px;;">
+                    </div>
+                </li>
+            </ul>
+            <div class="text-block-center">If you are looking for a data science consultancy or a reliable technology
+                partner to create innovative, market-leading solutions, we are here to help!</div>
+            <div class="certificates-action action">
+                <a href="#section-contacts" class="certificates-action-a action-a">Contact Us</a>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="main-welcome blue-line">
+        <div class="main-welcome-inner">
+            <div class="main-welcome-figure"></div>
+            <div class="main-welcome-content">
+                <h3 class="main-welcome-title">Our Mission Is to Bring the Power of AI to Every Business</h3>
+                <div class="main-welcome-text">
+                    <p>We are a data science and analytics consulting firm delivering AI-powered software and
+                        technical solutions to companies who want to leverage data and machine learning algorithms
+                        to add value to their businesses.</p>
+                    <p>As an artificial intelligence company, we’re focused on machine learning, AI software
+                        development, computer vision, and intelligent automation. We help businesses innovate with
+                        AI, enrich customer insights, automate processes and be more cost-efficient. This is ensured
+                        by the use of proprietary technologies, exceptional customer care, constant investment in
+                        talent development and our own R&#038;D center.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="main-cards">
+        <div class="main-cards-inner">
+            <div class="main-cards-wrapper">
+                <h3 class="main-welcome-title">Industries We Are Transforming</h3>
+                <div class="main-welcome-text">
+                    Take a look at examples of our work and learn how our clients from different industries have
+                    benefited from our data science consulting services.
+                </div>
+                <ul class="main-cards-list">
+                    <li class="main-cards-list-item">
+                        <div class="main-cards-list-item-desc">
+                            <h4 class="main-cards-list-item-desc-title">Digital Health</h4>
+                            <p class="main-cards-list-item-desc-text">Introduce neural networks into your mobile app and
+                                products to analyze user data and provide accurate services.</p>
+                        </div>
+                    </li>
+                    <li class="main-cards-list-item">
+                        <div class="main-cards-list-item-desc">
+                            <h4 class="main-cards-list-item-desc-title">Advertising</h4>
+                            <p class="main-cards-list-item-desc-text">Improve your advertising capabilities through AI
+                                and advanced social media analytics.</p>
+                        </div>
+                    </li>
+                    <li class="main-cards-list-item">
+                        <div class="main-cards-list-item-desc">
+                            <h4 class="main-cards-list-item-desc-title">Retail & E-commerce</h4>
+                            <p class="main-cards-list-item-desc-text">The entire industry is using AI to make strategic
+                                decisions. Don’t be left behind! Let our data scientists help you!</p>
+                        </div>
+                    </li>
+                    <li class="main-cards-list-item">
+                        <div class="main-cards-list-item-desc">
+                            <h4 class="main-cards-list-item-desc-title">Financial Services</h4>
+                            <p class="main-cards-list-item-desc-text">Optimize your processes and improve internal
+                                safety and security through custom AI solutions and data science services.</p>
+                        </div>
+                    </li>
+                    <li class="main-cards-list-item">
+                        <div class="main-cards-list-item-desc">
+                            <h4 class="main-cards-list-item-desc-title">Entertainment</h4>
+                            <p class="main-cards-list-item-desc-text">Automate customer feedback analysis and analyze
+                                enormous amounts of data to become more productive and provide outstanding services.</p>
+                        </div>
+                    </li>
+                    <li class="main-cards-list-item">
+                        <div class="main-cards-list-item-desc">
+                            <h4 class="main-cards-list-item-desc-title">Your Industry</h4>
+                            <p class="main-cards-list-item-desc-text">From a different industry? Contact us for data
+                                science consulting and learn how our AI company can add value to your business.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-block main-contacts" id="section-contacts">
+        <div class="contact-block-inner">
+            <h2 class="contact-block-title">Get Started with Data Science Today</h2>
+            <div class="contact-block-text">Let's Talk About Your Project.</div>
+            <div class="contact-block-form">
+                <form class="contact-block-form-form" action="https://formsubmit.co/3c7b4303076ec8d190402e0d0a8a333b" method="POST">
+                    <input type="text"  name="name" class="form-group-input-input" placeholder="Name*" required>
+                    <input type="email"  name="email" class="form-group-input-input" placeholder="Email*" required>
+                    <input type="tel"  name="phone" class="form-group-input-input" placeholder="Phone Number*" required>
+                    <textarea name="message" class="form-group-input-input"  rows="4" placeholder="Enter Your Message*" required></textarea>
+                    <button type="submit" class="contact-action-a action-a">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-top">
+                <div class="footer-nav">
+                    <ul class="footer-nav-list" id="footer-menu-1">
+                        <li class="footer-nav-list-list">
+                            <div class="footer-nav-list-list-item">Expertise & Services</div>
+                        </li>
+                        <li class="footer-nav-list-list">
+                            <a href="#section-contacts" class="footer-nav-list-list-item">Data Science & AI</a>
+                        </li>
+                        <li class="footer-nav-list-list">
+                            <a href="#section-contacts" class="footer-nav-list-list-item">AI Software Development</a>
+                        </li>
+                        <li class="footer-nav-list-list">
+                            <a href="#section-contacts" class="footer-nav-list-list-item">AI Mobile Apps Development</a>
+                        </li>
+                        <li class="footer-nav-list-list">
+                            <a href="#section-contacts" class="footer-nav-list-list-item">Computer Vision</a>
+                        </li>
+                        <li class="footer-nav-list-list">
+                            <a href="#section-contacts" class="footer-nav-list-list-item">Machine Learning</a>
+                        </li>
+                        <li class="footer-nav-list-list">
+                            <a href="#section-contacts" class="footer-nav-list-list-item">Data Capture & OCR</a>
+                        </li>
+                    </ul>
+                    <ul class="footer-nav-list" id="footer-menu-2">
+                        <li class="footer-nav-list-list">
+                            <div class="footer-nav-list-list-item">Computer Vision Techs</div>
+                        </li>
+                        <li class="footer-nav-list-list">
+                            <a href="#section-contacts" class="footer-nav-list-list-item">Pose Estimation</a>
+                        </li>
+                        <li class="footer-nav-list-list">
+                            <a href="#section-contacts" class="footer-nav-list-list-item">Image Recognition</a>
+                        </li>
+                        <li class="footer-nav-list-list">
+                            <a href="#section-contacts" class="footer-nav-list-list-item">Logo Detection</a>
+                        </li>
+                        <li class="footer-nav-list-list">
+                            <a href="#section-contacts" class="footer-nav-list-list-item">Visual Search</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-badge-socials">
+                    <div class="footer-socials">
+                        <ul class="socials-list">
+                            <li class="socials-list-list">
+                                <a href="https://www.facebook.com/" class="socials-list-list-item" target="_blank"><i
+                                        class='bx bxl-facebook'></i></i></a>
+                            </li>
+                            <li class="socials-list-list">
+                                <a href="https://www.linkedin.com/" class="socials-list-list-item" target="_blank"><i
+                                        class='bx bxl-linkedin'></i></a>
+                            </li>
+                            <li class="socials-list-list">
+                                <a href="https://www.instagram.com/" class="socials-list-list-item" target="_blank"><i
+                                        class='bx bxl-instagram'></i></a>
+                            </li>
+                        </ul>
+                        <div class="info-block">
+                            <div class="footer-nav-list-list-item">Antalya/Turkey</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-copyright">© IDATAYazılım 2022 - All Rights Reserved</div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    <script src="script.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            loop: true,
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true
+            }
+        });
+    </script>
+
+</body>
+
+</html>
